@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="LUISA" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="ENTROPY\;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/LUISA" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/LUISA" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-O3" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="ENTROPY/Compressor16Bits.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="ENTROPY/" />
+		</Unit>
+		<Unit filename="ENTROPY/Compressor16Bits.h">
+			<Option virtualFolder="ENTROPY/" />
+		</Unit>
+		<Unit filename="ENTROPY/FSECompressor8Bits.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="ENTROPY/" />
+		</Unit>
+		<Unit filename="ENTROPY/FSECompressor8Bits.h">
+			<Option virtualFolder="ENTROPY/" />
+		</Unit>
+		<Unit filename="ENTROPY/Huff0Compressor8Bits.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="ENTROPY/" />
+		</Unit>
+		<Unit filename="ENTROPY/Huff0Compressor8Bits.h">
+			<Option virtualFolder="ENTROPY/" />
+		</Unit>
+		<Unit filename="ENTROPY/bitstream.h">
+			<Option virtualFolder="ENTROPY/" />
+		</Unit>
+		<Unit filename="ENTROPY/entropy_common.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="ENTROPY/" />
+		</Unit>
+		<Unit filename="ENTROPY/error_private.h">
+			<Option virtualFolder="ENTROPY/" />
+		</Unit>
+		<Unit filename="ENTROPY/error_public.h">
+			<Option virtualFolder="ENTROPY/" />
+		</Unit>
+		<Unit filename="ENTROPY/fse.h">
+			<Option virtualFolder="ENTROPY/" />
+		</Unit>
+		<Unit filename="ENTROPY/fseU16.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="ENTROPY/" />
+		</Unit>
+		<Unit filename="ENTROPY/fseU16.h">
+			<Option virtualFolder="ENTROPY/" />
+		</Unit>
+		<Unit filename="ENTROPY/fse_compress.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="ENTROPY/" />
+		</Unit>
+		<Unit filename="ENTROPY/fse_decompress.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="ENTROPY/" />
+		</Unit>
+		<Unit filename="ENTROPY/huf.h">
+			<Option virtualFolder="ENTROPY/" />
+		</Unit>
+		<Unit filename="ENTROPY/huf_compress.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="ENTROPY/" />
+		</Unit>
+		<Unit filename="ENTROPY/huf_decompress.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="ENTROPY/" />
+		</Unit>
+		<Unit filename="ENTROPY/mem.h">
+			<Option virtualFolder="ENTROPY/" />
+		</Unit>
+		<Unit filename="LUISA.cpp" />
+		<Unit filename="LUISAType.h" />
+		<Unit filename="Model.cpp" />
+		<Unit filename="Model.hpp" />
+		<Unit filename="SubAlloc.hpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

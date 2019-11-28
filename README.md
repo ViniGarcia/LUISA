@@ -1,6 +1,6 @@
 # LUISA
 
-*Status: Development*
+*Status: Version 1.0*
 
 ### What is LUISA?
 
@@ -21,6 +21,8 @@
 | Implementation Type           | Traditional (LUISA), Fast (LUISA FAST)                                      |
 | Context Tree Update   		| Frequency, Frequency-Swap, Move-to-Front (MTF), Swap  					  |
 
+<p align="justify">These files are provided in three folders: "1.CLASSIC (With Update Exclusion)", "2.FAST (With Update Exclusion)", and "3.FAST (Without Update Exclusion)". Furthermore, we provide the source code of the most recent version of LUISA, which employs a PPMii context modeling [1]. This latest LUISA version is our state-of-art implementation and it is provided in "4.CURRENT (With Update Exclusion)" folder.</p>
+
 ### But... What is the difference among the versions?
 
 <p align="justify">There are many actually... The entropy encoder will define a clear tradeoff between processing time and compression ratio. Typically, the AE gets the best compression ratio but requires extra time to do so. FSE is the halfway between AE and HUFF0. Finally, HUFF0 is the fastest entropy encoder but, typically, gets the worst compression ratio. Observe that the same tradeoff is found in the keys generation optimization versions. UE versions tend to achieve a better compression ratio, while WUE versions are mostly faster than UE.</p>
@@ -37,3 +39,7 @@
 
 Vinícius Fülber Garcia (Federal University of Paraná)<br/>
 Sérgio Luis Sardi Mergen (Federal University of Santa Maria)
+
+### References
+
+[1] D. Shkarin, "PPM: one step to practicality," Proceedings DCC 2002. Data Compression Conference, Snowbird, UT, USA, 2002, pp. 202-211. doi: 10.1109/DCC.2002.999958

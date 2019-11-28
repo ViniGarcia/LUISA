@@ -1,0 +1,28 @@
+ID: "State of Art - High C High T"
+ROUNDS: 30
+TESTS: ALL
+COMPRESSORS:
+  - LUISA_PPMD_MODEL
+  - PPMD
+  - BZIP2
+  - GZIP
+  - ZSTD
+  - BSC
+  - 7ZIP
+CONFIGURE:
+  LUISA_PPMD_MODEL: 
+    OPTIONS: "-o 7"
+  PPMD:
+    MARK: "-o7"
+  GZIP:
+    MARK: "-9"
+  BZIP2:
+    MARK: "-9"
+  ZSTD:
+    MARK: "-19"
+  BSC:
+    OPTIONS: "-e2"
+  7ZIP:
+    MARK: "-mx9"
+CORPUSES: ["CALGARY", "CANTERBURY", "PROTEIN", "SILESIA", "PIZZACHILLI", "DICTIONARIES"]
+FILES: []

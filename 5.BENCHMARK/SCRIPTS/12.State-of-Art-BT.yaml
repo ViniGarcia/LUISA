@@ -1,0 +1,28 @@
+ID: "State of Art - Low C Low T"
+ROUNDS: 30
+TESTS: ALL
+COMPRESSORS:
+  - LUISA_PPMD_MODEL
+  - PPMD
+  - BZIP2
+  - GZIP
+  - ZSTD
+  - BSC
+  - 7ZIP
+CONFIGURE:
+  LUISA_PPMD_MODEL: 
+    OPTIONS: "-o 2"
+  PPMD:
+    MARK: "-o2"
+  GZIP:
+    MARK: "-1"
+  BZIP2:
+    MARK: "-1"
+  ZSTD:
+    MARK: "-1"
+  BSC:
+    OPTIONS: "-p"
+  7ZIP:
+    MARK: "-mx1"
+CORPUSES: ["CALGARY", "CANTERBURY", "PROTEIN", "SILESIA", "PIZZACHILLI", "DICTIONARIES"]
+FILES: []
