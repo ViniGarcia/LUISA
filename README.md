@@ -1,4 +1,4 @@
-# LUISA
+# LUISA: A Fast and Flexible PPM-based Compressor
 
 *Status: Version 1.0*
 
