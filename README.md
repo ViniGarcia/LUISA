@@ -31,6 +31,12 @@
 
 <p align="justify">Finally, the context tree update does not create a clear tradeoff. Better compression ratios can be achieved by using the best update version to the input files type. For example, files with extremally fast content modifications and with context combinations present only in a section of the file (e.g., dictionaries) can benefit from MTF versions. Files with fast content modifications that happen in different sections (e.g., partially ordered files) can benefit from the swap and frequency-swap implementations. At last, files that use a particular set of symbols and have random context distributions (e.g., generic text files) are more adequate to the frequency implementation.</p>
 
+<p align="justify">It is important to notice that our latest version ("4.CURRENT (With Update Exclusion)") employs a frequency oriented context update and the update exclusion technique. Furthermore, we enabled both the FSE and Huff0 compressors in the implementation to be configured on-demand through a flag. Other options, such as context tree memory, entropy encoder data block size, and context tree overflow recover mode, are also provided as flags to be configured on-demand.</p>
+
+### Can I test the LUISA Compressor?
+
+<p align="justify">Yes, for sure. To make it easier, we developed a testing framework located in the "5.BENCHMARK" folder. This framework is suited to Windows hosts and it is developed with Python 3 programming language. In there, we provide an easy way to benchmark several compressors with many well-known corpora. Also, we provide a set of results regarding the LUISA compressor in CSV files, in addition to the YAML scripts to reproduce their execution by using the framework.</p>
+
 ### Support
 
 <p align="justify">Contact us towards git issues requests or by the e-mails vfulber@inf.ufsm.br and mergen@inf.ufsm.br.</p>
